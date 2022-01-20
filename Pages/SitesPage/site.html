@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+        integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous" />
+    <!-- ===== BOX ICONS ===== -->
+    <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
+
+    <!-- ===== CSS ===== -->
+    <link rel="stylesheet" href="site.css">
+
+    <title>Sidebar menu responsive</title>
+</head>
+
+<body id="body-pd">
+    <header class="header" id="header">
+        <div class="header__toggle">
+            <i class='bx bx-menu' id="header-toggle"></i>
+        </div>
+
+        <div class="navbar__right">
+            <a href="#">
+                <i class="fa fa-search" aria-hidden="true"></i>
+            </a>
+            <a href="#" class="modal__button" id="open-modal">
+                <i class='bx bxs-edit-location'></i>
+            </a>
+            <a href="#">
+                <img class="avatar1" width="30" src="../images/ava.svg" alt="" />
+                <!-- <i class="fa fa-user-circle-o" aria-hidden="true"></i> -->
+            </a>
+    </header>
+
+    <div class="l-navbar" id="nav-bar">
+        <nav class="nav">
+            <div>
+                <a href="#" class="nav__logo">
+                    <i class='bx bx-layer nav__logo-icon'></i>
+                    <span class="nav__logo-name">CityLoc</span>
+                </a>
+
+                <div class="nav__list">
+                    <a href="#" class="nav__link active">
+                        <i class='bx bx-list-ul'></i>
+                        <span class="nav__name">Liste des sites</span>
+                    </a>
+
+                </div>
+            </div>
+
+            <a href="#" class="nav__link">
+                <i class='bx bx-log-out nav__icon'></i>
+                <span class="nav__name">Log Out</span>
+            </a>
+        </nav>
+    </div>
+    <!-- =========end card========== -->
+    <div class="bg-modal">
+        <div class="modal-contents wrapper">
+            <div class="close ">+</div>
+            <header>Ajouter un site</header>
+            <form action="#">
+                <div class="dbl-field">
+                    <div class="field">
+                        <input type="text" name="name" placeholder="Nom du site">
+
+                    </div>
+
+                </div>
+                <div class="dbl-field">
+                    <div class="field">
+                        <input type="text" name="phone" placeholder="Region">
+                    </div>
+                    <div class="field">
+                        <input type="text" name="website" placeholder="Lieu">
+                    </div>
+                </div>
+                <div class="message">
+                    <textarea placeholder="Description" name="message"></textarea>
+
+                </div>
+                <span style="padding: 2px; color:#4481eb; cursor:pointer; font-size:medium">selectionner des
+                    images</span>
+                <div class="button-area">
+                    <button type="submit">Ajoutez</button>
+                    <span></span>
+                </div>
+            </form>
+        </div>
+    </div>
+    <!-- Components View -->
+    <div style="margin:5em 0em;" class="main__cards">
+        <div class="card">
+            <img src="../images/Sites/OIP (1).jfif" />
+            <div class="card_inner">
+                <p class="text-primary-p">Region</p>
+                <span class="font-bold text-title">Centre</span>
+            </div>
+            <div class="card_inner">
+                <p class="text-primary-p">Lieu</p>
+                <span class="font-bold text-title">Tiga</span>
+            </div>
+            <button class="btn_consult">Consulter</button>
+        </div>
+        <div class="card">
+            <img src="../images/Sites/OIP (1).jfif" />
+            <div class="card_inner">
+                <p class="text-primary-p">Region</p>
+                <span class="font-bold text-title">Centre</span>
+            </div>
+            <div class="card_inner">
+                <p class="text-primary-p">Lieu</p>
+                <span class="font-bold text-title">Tiga</span>
+            </div>
+            <button class="btn_consult">Consulter</button>
+        </div>
+        <div class="card">
+            <img src="../images/Sites/OIP (2).jfif" />
+            <div class="card_inner">
+                <p class="text-primary-p">Region</p>
+                <span class="font-bold text-title">Centre</span>
+            </div>
+            <div class="card_inner">
+                <p class="text-primary-p">Lieu</p>
+                <span class="font-bold text-title">Tiga</span>
+            </div>
+            <button class="btn_consult">Consulter</button>
+        </div>
+        <div class="card">
+            <img src="../images/Sites/OIP.jfif" />
+            <div class="card_inner">
+                <p class="text-primary-p">Region</p>
+                <span class="font-bold text-title">Centre</span>
+            </div>
+            <div class="card_inner">
+                <p class="text-primary-p">Lieu</p>
+                <span class="font-bold text-title">Tiga</span>
+            </div>
+            <button class="btn_consult">Consulter</button>
+        </div>
+        <div class="card">
+            <img src="../images/Sites/OIP (1).jfif" />
+            <div class="card_inner">
+                <p class="text-primary-p">Region</p>
+                <span class="font-bold text-title">Centre</span>
+            </div>
+            <div class="card_inner">
+                <p class="text-primary-p">Lieu</p>
+                <span class="font-bold text-title">Tiga</span>
+            </div>
+            <button class="btn_consult">Consulter</button>
+        </div>
+        <div class="card">
+            <img src="../images/Sites/OIP (1).jfif" />
+            <div class="card_inner">
+                <p class="text-primary-p">Region</p>
+                <span class="font-bold text-title">Centre</span>
+            </div>
+            <div class="card_inner">
+                <p class="text-primary-p">Lieu</p>
+                <span class="font-bold text-title">Tiga</span>
+            </div>
+            <button class="btn_consult">Consulter</button>
+        </div>
+        <div class="card">
+            <img src="../images/Sites/télécharger.jfif" />
+            <div class="card_inner">
+                <p class="text-primary-p">Region</p>
+                <span class="font-bold text-title">Centre</span>
+            </div>
+            <div class="card_inner">
+                <p class="text-primary-p">Lieu</p>
+                <span class="font-bold text-title">Tiga</span>
+            </div>
+            <button class="btn_consult">Consulter</button>
+        </div>
+        <div class="card">
+            <img src="../images/Sites/télécharger (2).jfif" />
+            <div class="card_inner">
+                <p class="text-primary-p">Region</p>
+                <span class="font-bold text-title">Centre</span>
+            </div>
+            <div class="card_inner">
+                <p class="text-primary-p">Lieu</p>
+                <span class="font-bold text-title">Yaounde</span>
+            </div>
+            <button class="btn_consult">Consulter</button>
+        </div>
+        <div class="card">
+            <img src="../images/Sites/OIP.jfif" />
+            <div class="card_inner">
+                <p class="text-primary-p">Region</p>
+                <span class="font-bold text-title">Ouest</span>
+            </div>
+            <div class="card_inner">
+                <p class="text-primary-p">Lieu</p>
+                <span class="font-bold text-title">Baffoussam</span>
+            </div>
+            <button class="btn_consult">Consulter</button>
+        </div>
+        <div class="card">
+            <img src="../images/Sites/télécharger.jfif" />
+            <div class="card_inner">
+                <p class="text-primary-p">Region</p>
+                <span class="font-bold text-title">Littoral</span>
+            </div>
+            <div class="card_inner">
+                <p class="text-primary-p">Lieu</p>
+                <span class="font-bold text-title">Bonaberie</span>
+            </div>
+            <button class="btn_consult">Consulter</button>
+        </div>
+
+    </div>
+    <!--===== MAIN JS =====-->
+    <script src="site.js"></script>
+</body>
+
+</html>
